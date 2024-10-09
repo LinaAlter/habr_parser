@@ -21,4 +21,5 @@ for article in articles:
     for word in TARGET_WORDS:
         if word in preview2:
             print(f'{date} - {title} - {url}{link}')
-            
+        elif word in preview1:
+            print(f'{date} - {title} - {url}{link}')    
