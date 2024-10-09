@@ -18,8 +18,7 @@ for article in articles:
     link = article.find('a', class_="tm-title__link").get('href')
     
     
-    
     for word in TARGET_WORDS:
-        if word in preview1 or word in preview2:
-            result = f'{date} - {title} - {url}{link}'
-            print(result)
+        if word in preview2:
+            print(f'{date} - {title} - {url}{link}')
+            
